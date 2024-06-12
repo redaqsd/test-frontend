@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState<any>([])
   useEffect(() => {
     async function fetchData (){
-      const fetch = await axios.get('http://localhost:3000/test')
+      const fetch = await axios.get('test-app-liart-theta.vercel.app/test')
       setData(fetch.data.tests)
     }
 
